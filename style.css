@@ -1,0 +1,100 @@
+body{
+    background-color:  #D3D3D3;
+}
+.intro-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    margin-right: 350px;
+    object-fit: cover;
+}
+.intro{
+    background-color: pink;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+.intro{
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    border-radius: 10px;
+    color:  #333;
+}
+.intro-text h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.intro-text p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: pink;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease; 
+    color: white;
+}
+.cta-button:hover {
+    background-color: #ff3385;
+}
+.about-me {
+    background-color: pink;
+    padding: 60px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.about-me h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.about-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bio, .background, .fun-facts{
+    margin-bottom: 40px;
+}
+.about-me h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.fun-facts ul {
+    list-style-type: none;
+    padding-left: 0
+}
+.fun-facts li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px){
+    .about-me {
+        padding: 40px 20px;
+    }
+    .about-me h2{
+        font-size: 2rem;
+    }
+    .about-content {
+        padding: 0 20px;
+    }
+}
