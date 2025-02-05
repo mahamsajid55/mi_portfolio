@@ -1,0 +1,46 @@
+body{
+    background-color:  #e7e5e5;
+}
+
+.intro{
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    border-radius: 10px;
+    color:  #333;
+}
+
+.bio, .background, .fun-facts{
+    margin-bottom: 40px;
+}
+. h4{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.fun-facts ul {
+    list-style-type: none;
+    padding-left: 0
+}
+.fun-facts li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px){
+    .about-me {
+        padding: 40px 20px;
+    }
+    .about-me h2{
+        font-size: 2rem;
+    }
+    .about-content {
+        padding: 0 20px;
+    }
+}
+
