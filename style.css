@@ -94,4 +94,30 @@ body{
     }
   
    
+}ç
+/* === SKILLS CARD CONTAINER === */
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+   .card{
+    background-color: whitte;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.cardh4{
+    font-size: 1.5rem;
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
