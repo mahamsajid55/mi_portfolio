@@ -2,5 +2,58 @@ body{
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;
-    background-color: #ffe6f2;
+    background-color: #fc96c7;
+}
+.skills-container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.h1{
+    text-align: center;
+}
+
+.skills-list{
+    text-align: left;
+    margin-top: 20px;
+}
+.skill{
+    margin-bottom: 20px;
+}
+.progress{
+    width: 100%;
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress-bar{
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+}
+.html-css { background: #ff4081;}
+.javascript {  background: #ff9800;}
+.git-github { background: #463d3d;}
+.figma { background: #a259ff;}
+
+
+.back-button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #ff4081;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.back-button:hover{
+    background: #d0356b;
 }

@@ -114,3 +114,17 @@ body{
     }
 }
 
+
+.back-button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #ff4081;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.back-button:hover{
+    background: #d0356b;
+}
+
