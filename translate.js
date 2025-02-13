@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const languageSwitcher = document.getElementById("language-switcher"); // Language dropdown
-    const elementsToTranslate = document.querySelectorAll("[data-translate]"); // Elements with translations
+    const languageSwitcher = document.getElementById("language-switcher");
+    const elementsToTranslate = document.querySelectorAll("[data-translate]");
 
-    // Load saved language from localStorage
+    // Cargar idioma guardado en localStorage o usar inglés por defecto
     let currentLanguage = localStorage.getItem("selectedLanguage") || "en";
     languageSwitcher.value = currentLanguage;
     updateLanguage(currentLanguage);
 
-    // Change language on selection
+    // Evento para cambiar el idioma
     languageSwitcher.addEventListener("change", function () {
         const selectedLanguage = languageSwitcher.value;
         localStorage.setItem("selectedLanguage", selectedLanguage);
@@ -15,17 +15,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function updateLanguage(lang) {
-        fetch("language.json") // Use "language.json" (your file name)
+        fetch("./language.json") // Asegurar que la ruta sea correcta
             .then(response => response.json())
             .then(translations => {
+                console.log("Traducciones cargadas:", translations); // Depuración
+                if (!translations[lang]) {
+                    lang = "en"; // Fallback a inglés si el idioma no existe
+                }
                 elementsToTranslate.forEach(element => {
                     const key = element.getAttribute("data-translate");
                     if (translations[lang] && translations[lang][key]) {
-                        element.innerHTML = translations[lang][key];
+                        if (element.tagName === "INPUT" || element.tagName === "BUTTON") {
+                            element.value = translations[lang][key]; // Para inputs y botones
+                        } else {
+                            element.textContent = translations[lang][key]; // Para otros elementos
+                        }
                     }
                 });
             })
-            .catch(error => console.error("Error loading translations:", error));
+            .catch(error => console.error("Error al cargar traducciones:", error));
     }
 });
-
