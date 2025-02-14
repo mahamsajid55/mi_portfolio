@@ -16,27 +16,6 @@ const translations = {
         projects: "Proyectos"
     },
 
-     en: {
-        greeting: "Hi, I'm Maham Sajid!",
-        intro: "I am a front-end developer committed to delivering high-quality, responsive websites and applications. With expertise in modern web technologies, I ensure that each project is not only visually appealing but also optimized for performance and usability. My focus is on creating solutions that align with business objectives while providing an intuitive and seamless user experience.",
-        contact: "Contact Me",
-        bio: "Personal Bio",
-        skills: "Skills",
-        projects: "Projects",
-        
-        aboutTitle: "Myself",
-        aboutIntro: "I am a passionate Front-End Developer with a deep interest in creating user-friendly and responsive websites. My journey into tech started when I realized how empowering it is to bring creative ideas to life on the web. Through continuous learning and practical experience, I have honed my skills in HTML, CSS, JavaScript, and modern front-end frameworks like React. My goal is to build seamless, visually appealing user interfaces that provide the best possible experience for end users.",
-        funFactsTitle: "Fun Facts",
-        fact1: "I enjoy photography and love capturing nature and city landscapes.",
-        fact2: "When I'm not coding, you can find me exploring new cafes or reading about emerging web technologies.",
-        fact3: "I am a passionate traveler and have visited over [X] countries, gaining inspiration from different cultures.",
-        fact4: "In my free time, I like to experiment with graphic design and digital art.",
-        languagesTitle: "Languages I Speak",
-        lang1: "🇺🇸 English - Fluent",
-        lang2: "🇪🇸 Spanish - Intermediate",
-        lang3: "🇵🇰 Urdu - Mother Language",
-        backHome: "← Back to Home"
-    },
 };
 
 // Function to update the text based on the selected language
